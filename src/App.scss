@@ -1,0 +1,74 @@
+.App {
+  text-align: center;
+
+  #quote-box {
+    border: 2px solid;
+    border-color: #444444;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 80%;
+    width: 500px;
+    
+    
+    #author {
+      font-style: italic;
+      font-size: smaller;
+    }
+    .button {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 50px;
+      #tweet-quote{
+        display: flex;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.9);
+        border-radius: 5px;
+        text-decoration: none;
+        color: #efe2d3;
+      }
+      #new-quote{
+        font-size: 16px;
+        display: flex;
+        padding: 14px;
+        background-color: rgba(0, 0, 0, 0.9);
+        color: #efe2d3;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        :hover {
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+      }
+    }
+    
+    
+  }
+  .App-header {
+    background-color: #efe2d3;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .Quote-mark-top{
+    color: #444444;
+    margin-top: -70px;
+    margin-bottom: -10px;
+    font-size: calc(24px + 5vmin);
+    }
+  .Quote-mark-bottom{
+    color: #444444;
+    margin-top: -15px;
+    margin-bottom: -10px;
+    font-size: calc(24px + 5vmin);
+    }
+}
+
+
+
+
