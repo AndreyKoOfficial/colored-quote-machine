@@ -8,7 +8,7 @@ let quoteDBUrl ="https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585
 
 function App() {
 
-  const [quote, setQuote] = useState("Life is a bla-bla");
+  const [quote, setQuote] = useState("Life is a bla-bla-bla");
   const [author, setAuthor] = useState("Socratus");
   const [randomNubmer, setRandomNumber] = useState(0);
   const [quotesArray, setQuotesArray] = useState(null);

@@ -1,4 +1,7 @@
+$layout-breakpoint: 600px;
+
 .App {
+  
   text-align: center;
 
   #quote-box {
@@ -6,28 +9,32 @@
     border-color: #444444;
     border-radius: 20px;
     padding: 20px;
-    max-width: 80%;
-    width: 500px;
-    
-    
-    #author {
+    width: 80%;
+    @media (min-width: $layout-breakpoint){
+      width: 500px;
+    }
+        
+      #author {
       font-style: italic;
       font-size: smaller;
-    }
-    .button {
+      }
+     .button {
       display: flex;
       justify-content: space-between;
       align-items: center;
       min-height: 50px;
-      #tweet-quote{
+      #tweet-quote {
         display: flex;
         padding: 10px;
         background-color: rgba(0, 0, 0, 0.9);
         border-radius: 5px;
         text-decoration: none;
         color: #efe2d3;
-      }
-      #new-quote{
+        }
+      #tweet-quote:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+          }
+      #new-quote {
         font-size: 16px;
         display: flex;
         padding: 14px;
@@ -36,10 +43,10 @@
         border-radius: 5px;
         border: none;
         cursor: pointer;
-        :hover {
+        }
+      #new-quote:hover {
           background-color: rgba(0, 0, 0, 0.8);
         }
-      }
     }
     
     
@@ -54,21 +61,20 @@
     font-size: calc(10px + 2vmin);
     color: rgba(0, 0, 0, 0.9);
   }
-  
-  .Quote-mark-top{
-    color: #444444;
-    margin-top: -70px;
-    margin-bottom: -10px;
+
+    .Quote-mark-top {
+    margin-top: -58px;  
     font-size: calc(24px + 5vmin);
+    color: #444444;
+    margin-bottom: -10px;
+    @media (min-width: $layout-breakpoint) {
+      margin-top:-70px
     }
-  .Quote-mark-bottom{
+        }
+  .Quote-mark-bottom {
     color: #444444;
     margin-top: -15px;
     margin-bottom: -10px;
     font-size: calc(24px + 5vmin);
     }
 }
-
-
-
-
